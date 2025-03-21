@@ -1,19 +1,27 @@
 import { useState } from "react";
 import { MENU_LINKS } from "../utils/Data";
 import { Link } from "react-scroll";
+import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(true);
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-//   const closeMenu = () => {
-//     setIsOpen(false);
+//   const toggleMenu = () => {
+//     setIsOpen(!isOpen);
 //   };
+  //   const closeMenu = () => {
+  //     setIsOpen(false);
+  //   };
   return (
     <nav className="container mx-auto sticky top-5 z-10">
       <div className="flex items-center justify-between rounded-full bg-white/25 border border-[#fee6cc] backdrop-blur-md m-5 p-3 md:p-0">
         <h1 className="uppercase font-sans font-bold text-3xl">Portfolio</h1>
+
+        <button
+          className="md:hidden p-2"
+          onClick={() => setIsOpen(!isOpen)} // Memanggil setIsOpen langsung
+        >
+          {isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+        </button>
 
         <ul className={`${isOpen ? "flex" : "hidden"} menu-wrapper`}>
           {MENU_LINKS.map((item) => (
