@@ -29,7 +29,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="container mx-auto sticky top-5 z-10">
+    <nav className="container mx-auto sticky top-5 z-10 max-w-[1280px]">
       <div className="flex items-center justify-between rounded-full bg-white/25 border border-[#fee6cc] backdrop-blur-md m-5 p-3 md:p-0">
         <h1 className="uppercase font-sans font-bold text-lg lg:text-2xl ml-5">
           Portfolio
