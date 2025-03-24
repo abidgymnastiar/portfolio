@@ -1,3 +1,6 @@
+import StatInCard from "../components/StatInCard";
+import { STATS } from "../utils/Data";
+
 const Hero = () => {
   return (
     <section id="hero" className="container mx-auto px-8">
@@ -24,6 +27,11 @@ const Hero = () => {
             </button>
           </div>
         </div>
+      </div>
+      <div className="flex gap-[12px] mt-16 md:mt-24 flex-wrap">
+        {STATS.map((item) => (
+          <StatInCard key={item.id} count={item.count} label={item.label} />
+        ))}
       </div>
     </section>
   );
