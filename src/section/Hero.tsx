@@ -1,7 +1,7 @@
 import StatInCard from "../components/StatInCard";
 import { STATS } from "../utils/Data";
 
-const Hero = () => {
+function Hero() {
   return (
     <section id="hero" className="container mx-auto px-8 max-w-[1220px]">
       <div className="flex flex-col lg:flex-row gap-14 items-center justify-between mt-[80px]">
@@ -35,6 +35,6 @@ const Hero = () => {
       </div>
     </section>
   );
-};
+}
 
 export default Hero;

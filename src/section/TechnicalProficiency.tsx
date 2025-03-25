@@ -3,7 +3,7 @@ import Tabs from "../components/Tabs";
 import { SKILL_TABS, SKILLS } from "../utils/Data";
 import SkillCard from "../components/SkillCard";
 
-const TechnicalProficiency = () => {
+function TechnicalProficiency() {
   const [tabData, setTabData] = useState(SKILLS);
   const [activeTab, setActiveTab] = useState("all");
 
@@ -53,6 +53,6 @@ const TechnicalProficiency = () => {
       </div>
     </section>
   );
-};
+}
 
 export default TechnicalProficiency;

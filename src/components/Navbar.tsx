@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 import { CgMenuMotion } from "react-icons/cg";
 import { CgClose } from "react-icons/cg";
 
-const Navbar = () => {
+function Navbar() {
   const [isOpen, setIsOpen] = useState(true);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -70,6 +70,6 @@ const Navbar = () => {
       </div>
     </nav>
   );
-};
+}
 
 export default Navbar;

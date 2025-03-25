@@ -10,7 +10,7 @@ interface TabsProps {
   onChange: (tab: string) => void;
 }
 
-const Tabs: React.FC<TabsProps> = ({ tabList, activeTab, onChange }) => {
+function Tabs({ tabList, activeTab, onChange }: TabsProps) {
   const getActiveStyles = (value: string) => {
     return activeTab === value
       ? "text-white bg-gradient-primary"
@@ -33,6 +33,6 @@ const Tabs: React.FC<TabsProps> = ({ tabList, activeTab, onChange }) => {
       </div>
     </div>
   );
-};
+}
 
 export default Tabs;

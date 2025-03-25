@@ -3,7 +3,7 @@ interface StatInCardProps {
   label: string;
 }
 
-const StatInCard: React.FC<StatInCardProps> = ({ count, label }) => {
+function StatInCard ({ count, label }: StatInCardProps)  {
   return (
     <div className="flex-1 flex items-center gap-3 md:gap-5 bg-gradient-to-b from-[#fcf4ec] to-[#ffffff] rounded-[14px] p-5">
       <h4 className="text-4xl md:text-5xl font-medium text-secondary">
