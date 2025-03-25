@@ -27,13 +27,15 @@
     @apply h-10 md:h-12 text-xs md:text-[14px] font-medium text-primary px-4 lg:px-10 rounded-[71px] border-2 border-primary;
   }
 
-  .action-btn{
-    @apply h-10 md:h-12 text-xs md:text-[14px] font-medium text-white bg-gradient-primary px-4 lg:px-10 rounded-[71px]
+  .action-btn {
+    @apply h-10 md:h-12 text-xs md:text-[14px] font-medium text-white bg-gradient-primary px-4 lg:px-10 rounded-[71px];
   }
 
-  .btn-scale-anim{
-    @apply transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg; 
+  .btn-scale-anim {
+    @apply transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg;
   }
 
-
+  .section-title {
+    @apply text-[26px] font-semibold text-center bg-gradient-primary bg-clip-text text-transparent;
+  }
 }
