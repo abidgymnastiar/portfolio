@@ -28,7 +28,7 @@ export const SKILLS = [
     id: 1,
     icon: AiFillAccountBook,
     skill: "React JS",
-    progress: 90,
+    progress: 30,
     type: "frontend",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
@@ -37,7 +37,7 @@ export const SKILLS = [
     id: 2,
     icon: AiFillAccountBook,
     skill: "JavaScript",
-    progress: 85,
+    progress: 15,
     type: "frontend",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",

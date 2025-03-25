@@ -39,17 +39,20 @@ function TechnicalProficiency() {
           activeTab={activeTab}
           onChange={handleTabValueChange}
         />
-
-        {tabData.map((skill, index) => (
-          <div key={skill.id}>
-            <SkillCard
-              icon={<skill.icon className="w-6 h-6 text-primary" />}
-              skillName={skill.skill}
-              description={skill.description}
-              progress={skill.progress}
-            />
-          </div>
-        ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 ">
+          {tabData.map((skill) => {
+            const IconComponent = skill.icon;
+            return (
+              <SkillCard
+                key={skill.id}
+                icon={<IconComponent className="w-6 h-6 text-primary" />}
+                skillName={skill.skill}
+                description={skill.description}
+                progress={skill.progress}
+              />
+            );
+          })}
+        </div>
       </div>
     </section>
   );
