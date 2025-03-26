@@ -10,7 +10,7 @@ function SkillCard({ icon, skillName, description, progress }: SkillProps) {
     <>
       <div className="bg-white rounded-2xl border border-[#fceBd4] p-4">
         <div className="flex gap-3">
-          <div>{icon}</div>
+          <div className="w-10 h-10 flex items-center justify-center bg-gradient-to-b from-[#fdeddd] to-white rounded-[7px]">{icon}</div>
           <div className="flex-1">
             <div className="flex items-center justify-between">
               <p className="text-[13px] text-black font-medium">{skillName}</p>
