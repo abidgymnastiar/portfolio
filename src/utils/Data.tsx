@@ -61,3 +61,22 @@ export const SKILLS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
   },
 ];
+
+import { FaFacebookSquare } from "react-icons/fa";
+
+export const ABOUT_ME = {
+  content:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.\nLorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
+
+  sosialLinks: [
+    { id: "01", label: "Facebook", icon: FaFacebookSquare, link: "#" },
+    { id: "02", label: "Instagram", icon: FaFacebookSquare, link: "#" },
+    { id: "03", label: "Twitter", icon: FaFacebookSquare, link: "#" },
+    { id: "04", label: "LinkedIn", icon: FaFacebookSquare, link: "#" },
+    { id: "05", label: "Github", icon: FaFacebookSquare, link: "#" },
+  ],
+
+  email: "abidgymnastiar@gmail.com",
+  phone: "+62 812-3456-7890",
+  address: "Ponorogo, East Java, Indonesia",
+};

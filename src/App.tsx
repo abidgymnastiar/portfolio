@@ -1,6 +1,7 @@
 import Hero from "./section/Hero";
 import Navbar from "./components/Navbar";
 import TechnicalProficiency from "./section/TechnicalProficiency";
+import AboutMe from "./section/Aboutme";
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <Navbar />
       <Hero />
       <TechnicalProficiency />
-      <Abo
+      <AboutMe />
     </>
   );
 }
