@@ -80,3 +80,31 @@ export const ABOUT_ME = {
   phone: "+62 812-3456-7890",
   address: "Ponorogo, East Java, Indonesia",
 };
+
+import img from "../assets/react.svg";
+export const PROJECTS = [
+  {
+    id: "1",
+    title: "Project 1",
+    image: img,
+    tags: ["React", "JavaScript", "CSS"],
+  },
+  {
+    id: "2",
+    title: "Project 2",
+    image: img,
+    tags: ["React", "JavaScript", "CSS"],
+  },
+  {
+    id: "3",
+    title: "Project 3",
+    image: img,
+    tags: ["React", "JavaScript", "CSS"],
+  },
+  {
+    id: "4",
+    title: "Project 4",
+    image: img,
+    tags: ["React", "JavaScript", "CSS"],
+  },
+];
