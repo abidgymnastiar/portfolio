@@ -29,7 +29,7 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className="container mx-auto sticky top-5 z-10 max-w-[1280px]">
+    <nav className="container mx-auto sticky top-5 z-10 max-w-[1280px] px-5">
       <div className="flex items-center justify-between rounded-full bg-tertiary-100/50 border border-secondaryy-100 backdrop-blur-md  p-3 md:p-0">
         <h1 className="uppercase font-sans font-bold text-lg lg:text-2xl ml-5 text-primaryy-100">
           Portfolio
