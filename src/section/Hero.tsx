@@ -4,8 +4,8 @@ import img  from "../assets/hero.png"
 
 function Hero() {
   return (
-    <section id="hero" className="container mx-auto px-8 max-w-[1220px]">
-      <div className="flex flex-col lg:flex-row gap-14 items-center justify-between mt-[80px]">
+    <section id="hero" className="container mx-auto px-5 py-10 md:py-20 lg:mt-10 max-w-[1220px]">
+      <div className="flex flex-col lg:flex-row gap-2 lg:gap-14 items-center justify-between">
         <div className="order-2 lg:order-1 text-center lg:text-left mt-16 lg:mt-0">
           <h3 className="text-xl lg:text-2xl font-medium text-secondaryy-100 ">
             👋🏻 Halo, Saya Abid
@@ -28,15 +28,15 @@ function Hero() {
             </button>
           </div>
         </div>
-        <div className="">
+        <div className="lg:order-2 order-1">
           <img
             src={img}
             alt="hero"
-            className="w-full h-auto lg:w-[500px] lg:h-[500px] object-cover"
+            className="w-full h-[350px] md:h-[500px] object-cover"
           />
         </div>
       </div>
-      <div className="flex gap-[12px] mt-16 md:mt-24 flex-wrap">
+      <div className="flex gap-[12px] mt-16 md:mt-24 flex-wrap justify-center">
         {STATS.map((item) => (
           <StatInCard key={item.id} count={item.count} label={item.label} />
         ))}
