@@ -24,6 +24,8 @@ export default {
         tertiary: {
           100: "#2b2c69",
           200: "#242460",
+          300: "#363c93",
+          400: "#5f6bd9",
         },
       },
       backgroundImage: {

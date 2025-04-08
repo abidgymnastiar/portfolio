@@ -21,15 +21,22 @@ function TechnicalProficiency() {
     setActiveTab(value);
   };
   return (
-    <section id="skills" className="bg-background">
-      <div className="max-w-[1220px] py-10  mx-auto">
+    <section id="skills" className="">
+      <div className="max-w-[1220px] bg-tertiary-100 rounded-3xl px-5 py-10 mx-auto">
         <div className="w-full lg:w-[60vw] mx-auto">
-          <h4 className="section-title">Technical Proficiency</h4>
-          <p className="text-sm text-center mt-4 leading-6">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
-            maxime praesentium fugiat! Dolore modi, temporibus aliquam iure ipsa
-            delectus, quod ut quis ipsum ab hic ratione earum beatae maiores
-            sapiente? Sed deserunt possimus rerum velit eaque et maxime
+          <h4 className="section-title">Kemampuan Teknis</h4>
+          <p className="text-sm text-center mt-4 leading-6 text-primaryy-300">
+            Saya memiliki keahlian kuat dalam pengembangan front-end menggunakan
+            berbagai teknologi modern yang mendukung pembuatan antarmuka web
+            yang responsif, interaktif, dan user-friendly, serta dioptimalkan
+            untuk performa dan pengalaman pengguna yang maksimal. Dengan
+            pemahaman yang mendalam terhadap prinsip desain antarmuka dan
+            arsitektur web, saya mampu mengubah desain UI/UX menjadi tampilan
+            yang fungsional dan menarik secara visual, baik untuk perangkat
+            desktop maupun mobile. Kemampuan ini saya kembangkan melalui
+            berbagai proyek pribadi dan kolaborasi tim, serta pengalaman
+            langsung dalam membangun dan mengelola aplikasi web skala kecil
+            hingga menengah.
           </p>
         </div>
         <Tabs
@@ -37,7 +44,7 @@ function TechnicalProficiency() {
           activeTab={activeTab}
           onChange={handleTabValueChange}
         />
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center ">
+        <div className="flex gap-4 justify-center flex-wrap ">
           {tabData.map((skill, index) => {
             const IconComponent = skill.icon;
             return (
@@ -49,7 +56,7 @@ function TechnicalProficiency() {
               >
                 <SkillCard
                   key={skill.id}
-                  icon={<IconComponent className="w-6 h-6 text-primary" />}
+                  icon={<IconComponent className="w-6 h-6 text-tertiary-100" />}
                   skillName={skill.skill}
                   description={skill.description}
                   progress={skill.progress}

@@ -16,11 +16,11 @@ function Tabs({ tabList, activeTab, onChange }: TabsProps) {
   const getActiveStyles = (value: string) => {
     return activeTab === value
       ? "text-white bg-gradient-primary"
-      : "text-secondary bg-transparent";
+      : "text-primaryy-200 bg-transparent";
   };
   return (
     <div className="flex items-center justify-center my-10">
-      <div className="bg-[#fff6eb] rounded-full flex">
+      <div className="bg-tertiary-300 rounded-full flex">
         {tabList.map((tab) => (
           <motion.button
             key={tab.id}
