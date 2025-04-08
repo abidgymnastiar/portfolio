@@ -1,18 +1,19 @@
 import StatInCard from "../components/StatInCard";
 import { STATS } from "../utils/Data";
+import img  from "../assets/hero.png"
 
 function Hero() {
   return (
     <section id="hero" className="container mx-auto px-8 max-w-[1220px]">
       <div className="flex flex-col lg:flex-row gap-14 items-center justify-between mt-[80px]">
         <div className="order-2 lg:order-1 text-center lg:text-left mt-16 lg:mt-0">
-          <h3 className="text-xl lg:text-2xl font-medium text-black ">
+          <h3 className="text-xl lg:text-2xl font-medium text-secondaryy-100 ">
             👋🏻 Halo, Saya Abid
           </h3>
-          <h1 className="w-full lg:w-[480px] text-4xl lg:text-5xl font-bold leading-[50px] lg:leading-[60px] mt-3 bg-gradient-primary bg-clip-text text-transparent">
+          <h1 className="w-full lg:w-[480px] text-4xl lg:text-5xl font-bold leading-[50px] lg:leading-[60px] mt-3 text-primaryy-100 bg-clip-text">
             Selamat Datang di Portofolio Saya!
           </h1>
-          <p className="w-full lg:w-[500px] text-sm lg:text-base mt-4">
+          <p className="w-full lg:w-[500px] text-sm lg:text-base mt-4 text-primaryy-300">
             Saya adalah seorang pengembang web dengan pengalaman lebih dari 2
             tahun yang memiliki keahlian dalam pengembangan front-end, desain
             responsif, serta meningkatkan performa website dengan SEO.
@@ -26,6 +27,13 @@ function Hero() {
               Kontak Saya
             </button>
           </div>
+        </div>
+        <div className="">
+          <img
+            src={img}
+            alt="hero"
+            className="w-full h-auto lg:w-[500px] lg:h-[500px] object-cover"
+          />
         </div>
       </div>
       <div className="flex gap-[12px] mt-16 md:mt-24 flex-wrap">

@@ -30,14 +30,14 @@ function Navbar() {
 
   return (
     <nav className="container mx-auto sticky top-5 z-10 max-w-[1280px]">
-      <div className="flex items-center justify-between rounded-full bg-white/25 border border-[#fee6cc] backdrop-blur-md m-5 p-3 md:p-0">
-        <h1 className="uppercase font-sans font-bold text-lg lg:text-2xl ml-5">
+      <div className="flex items-center justify-between rounded-full bg-white/25 border border-[#fee6cc] backdrop-blur-md  p-3 md:p-0">
+        <h1 className="uppercase font-sans font-bold text-lg lg:text-2xl ml-5 text-primaryy-100">
           Portfolio
         </h1>
 
         {/* Hamburger Icon */}
         <button
-          className="block md:hidden text-[#333] mr-6 focus:outline-none"
+          className="block md:hidden text-primaryy-200 mr-6 focus:outline-none"
           onClick={toggleMenu}
         >
           {isOpen ? (
@@ -57,7 +57,7 @@ function Navbar() {
                 smooth
                 spy
                 offset={item.offset}
-                className="menu-item"
+                className="menu-item text-primaryy-200"
               >
                 {item.label}
               </Link>
