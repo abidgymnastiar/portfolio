@@ -27,6 +27,10 @@ export default {
           300: "#363c93",
           400: "#5f6bd9",
         },
+        quaternary: {
+          100: "#242663",
+          200: "#0b1145",
+        },
       },
       backgroundImage: {
         "gradient-primary": "linear-gradient(to right, #31d1ff, #1fa0ff)",
