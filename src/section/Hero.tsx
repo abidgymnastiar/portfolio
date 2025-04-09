@@ -1,11 +1,14 @@
 import StatInCard from "../components/StatInCard";
 import { STATS } from "../utils/Data";
-import img  from "../assets/hero.png"
+import img from "../assets/hero.png";
 
 function Hero() {
   return (
-    <section id="hero" className="container mx-auto px-5 py-10 md:py-20 lg:mt-10 max-w-[1220px]">
-      <div className="flex flex-col lg:flex-row gap-2 lg:gap-14 items-center justify-between">
+    <section
+      id="hero"
+      className="mx-auto px-5 py-10 md:py-20 lg:mt-10 max-w-[1440px]"
+    >
+      <div className="flex flex-col lg:flex-row gap-2 lg:gap-14 items-center">
         <div className="order-2 lg:order-1 text-center lg:text-left mt-16 lg:mt-0">
           <h3 className="text-xl lg:text-2xl font-medium text-secondaryy-100 ">
             👋🏻 Halo, Saya Abid
@@ -18,7 +21,6 @@ function Hero() {
             tahun yang memiliki keahlian dalam pengembangan front-end, desain
             responsif, serta meningkatkan performa website dengan SEO.
           </p>
-
           <div className="flex justify-center lg:justify-start gap-4 md:gap-8 mt-6">
             <button className="flex-1 md:flex-none action-btn-outline btn-scale-anim">
               Lihat Pekerjaan Saya
@@ -28,7 +30,7 @@ function Hero() {
             </button>
           </div>
         </div>
-        <div className="lg:order-2 order-1">
+        <div className="lg:order-2 order-1 flex mx-auto">
           <img
             src={img}
             alt="hero"

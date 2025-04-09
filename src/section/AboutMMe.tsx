@@ -6,7 +6,7 @@ function AboutMe() {
       <h4 className="block lg:hidden w-[200px] section-title text-left mb-16">
         About
       </h4>
-      <div className="flex flex-col lg:flex-row gap-16 items-start justify-between max-w-[1220px] mx-auto">
+      <div className="flex flex-col lg:flex-row gap-16 items-start justify-between max-w-[1440px] mx-auto">
         <div className="w-[300px] md:w-[370px]">
           <img src={img} alt="" />
         </div>

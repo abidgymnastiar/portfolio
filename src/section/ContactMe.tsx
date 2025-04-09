@@ -5,7 +5,7 @@ import ContactInfoCard from "../components/ContactInfoCard";
 function ContactMe() {
   return (
     <section id="contact" className="bg-tertiary-600">
-      <div className="container mx-auto p-18 py-10">
+      <div className="w-full max-w-[1440px] mx-auto p-18 py-10">
         <div className="w-full lg:[60vw] mx-auto">
           <h4 className="section-title">Kontak Saya</h4>
 

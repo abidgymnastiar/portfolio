@@ -24,7 +24,7 @@ function MyProjects() {
 
   return (
     <div id="projects" className="mt-14">
-      <div className="container mx-auto px-8 md:px-10 py-10">
+      <div className="w-full max-w-[1440px] mx-auto px-8 md:px-10 py-10">
         <div className="w-full lg:w-[60vw] mx-auto">
           <h4 className="section-title">Projek Terbaru</h4>
 
