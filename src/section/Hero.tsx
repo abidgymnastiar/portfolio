@@ -8,7 +8,7 @@ function Hero() {
       id="hero"
       className="mx-auto px-5 py-10 md:py-20 lg:mt-10 max-w-[1440px]"
     >
-      <div className="flex flex-col lg:flex-row gap-2 lg:gap-14 items-center">
+      <div className="flex flex-col lg:flex-row gap-2 lg:gap-14 items-center justify-between">
         <div className="order-2 lg:order-1 text-center lg:text-left mt-16 lg:mt-0">
           <h3 className="text-xl lg:text-2xl font-medium text-secondaryy-100 ">
             👋🏻 Halo, Saya Abid
@@ -30,7 +30,7 @@ function Hero() {
             </button>
           </div>
         </div>
-        <div className="lg:order-2 order-1 flex mx-auto">
+        <div className="lg:order-2 order-1">
           <img
             src={img}
             alt="hero"
