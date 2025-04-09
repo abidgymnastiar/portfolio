@@ -56,7 +56,7 @@ function TechnicalProficiency() {
               >
                 <SkillCard
                   key={skill.id}
-                  icon={<IconComponent className="w-6 h-6 text-tertiary-100" />}
+                  icon={<IconComponent className="w-6 h-6 text-tertiary-300" />}
                   skillName={skill.skill}
                   description={skill.description}
                   progress={skill.progress}

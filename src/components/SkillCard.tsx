@@ -10,7 +10,7 @@ function SkillCard({ icon, skillName, description, progress }: SkillProps) {
     <>
       <div className="bg-tertiary-400 rounded-2xl border border-tertiary-300 p-4 w-[300px]">
         <div className="flex gap-3">
-          <div className="w-10 h-10 flex items-center justify-center bg-gradient-to-b from-tertiary-400 to-white rounded-[7px]">
+          <div className="w-10 h-10 flex items-center justify-center bg-gradient-to-b from-quaternary-200 to-quaternary-100 rounded-[7px]">
             {icon}
           </div>
           <div className="flex-1">
@@ -24,7 +24,7 @@ function SkillCard({ icon, skillName, description, progress }: SkillProps) {
             </div>
             <div className="w-full bg-white rounded-md h-[5px] relative mt-2 overflow-hidden">
               <div
-                className="h-full bg-gradient-to-r from-sky-400 to-red-500 rounded-md transition-all duration-500"
+                className="h-full bg-gradient-to-r from-quaternary-100 to-quaternary-200 rounded-md transition-all duration-500"
                 style={{ width: `${progress}%` }}
               ></div>
             </div>
