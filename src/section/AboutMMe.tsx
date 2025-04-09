@@ -2,7 +2,7 @@ import { ABOUT_ME } from "../utils/Data";
 import img from "../assets/react.svg";
 function AboutMe() {
   return (
-    <section id="about" className="container px-5 py-10 mx-auto">
+    <section id="about" className="w-full py-10 mx-auto">
       <h4 className="block lg:hidden w-[200px] section-title text-left mb-16">
         About
       </h4>
@@ -24,7 +24,7 @@ function AboutMe() {
                 href={item.link}
                 className="text-primary hover:text-secondaryy-400 transition duration-300 group"
               >
-                <item.icon className="text-2xl text-secondaryy-100 transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110 group-hover:translate-y-[-2px] group-hover:text-secondaryy-400" />
+                <item.icon className="text-2xl text-quaternary-300 transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110 group-hover:translate-y-[-2px] group-hover:text-secondaryy-400" />
               </a>
             ))}
           </div>
