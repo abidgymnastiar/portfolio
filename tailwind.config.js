@@ -28,8 +28,10 @@ export default {
           400: "#5f6bd9",
         },
         quaternary: {
-          100: "#242663",
-          200: "#0b1145",
+          100: "#d3facd",
+          200: "#08a2e3",
+          300: "#31d1ff",
+          400: "#1fa0ff",
         },
       },
       backgroundImage: {

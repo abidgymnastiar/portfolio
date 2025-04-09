@@ -17,8 +17,7 @@ export const SKILL_TABS = [
   { id: "1", label: "All", value: "all" },
   { id: "2", label: "Frontend", value: "frontend" },
   { id: "3", label: "Backend", value: "backend" },
-  { id: "4", label: "Webflow", value: "Webflow" },
-  { id: "5", label: "Wordpress", value: "Wordpress" },
+  { id: "4", label: "Database", value: "Database" },
 ];
 
 import { AiFillAccountBook } from "react-icons/ai";
@@ -27,23 +26,32 @@ export const SKILLS = [
   {
     id: 1,
     icon: AiFillAccountBook,
-    skill: "React JS",
-    progress: 30,
+    skill: "HTML",
+    progress: 40,
     type: "frontend",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
+      "Terampil dalam membuat desain web yang menarik dan responsif menggunakan Flexbox, Grid, serta animasi dan transisi. Familiar dengan framework seperti Tailwind CSS dan Bootstrap.",
   },
   {
     id: 2,
+    icon: AiFillAccountBook,
+    skill: "CSS",
+    progress: 40,
+    type: "Webflow",
+    description:
+      "Terampil dalam membuat desain web yang menarik dan responsif menggunakan Flexbox, Grid, serta animasi dan transisi. Familiar dengan framework seperti Tailwind CSS dan Bootstrap.",
+  },
+  {
+    id: 3,
     icon: AiFillAccountBook,
     skill: "JavaScript",
     progress: 15,
     type: "frontend",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
+      "Menguasai JavaScript modern untuk pengembangan fitur interaktif pada website. Terbiasa menggunakan fitur seperti arrow function, async/await, destructuring, dan modular programming.",
   },
   {
-    id: 3,
+    id: 4,
     icon: AiFillAccountBook,
     skill: "Java",
     progress: 80,
@@ -52,11 +60,92 @@ export const SKILLS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
   },
   {
-    id: 4,
+    id: 5,
+    icon: AiFillAccountBook,
+    skill: "PHP",
+    progress: 50,
+    type: "backend",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
+  },
+  {
+    id: 6,
     icon: AiFillAccountBook,
     skill: "Python",
     progress: 75,
     type: "backend",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
+  },
+  {
+    id: 7,
+    icon: AiFillAccountBook,
+    skill: "Bootstrap 4",
+    progress: 100,
+    type: "Frondend",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
+  },
+  {
+    id: 6,
+    icon: AiFillAccountBook,
+    skill: "Tailwind CSS",
+    progress: 100,
+    type: "Frondend",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
+  },
+  {
+    id: 7,
+    icon: AiFillAccountBook,
+    skill: "Motion",
+    progress: 60,
+    type: "Frondend",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
+  },
+  {
+    id: 8,
+    icon: AiFillAccountBook,
+    skill: "My Sql",
+    progress: 100,
+    type: "Database",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
+  },
+  {
+    id: 9,
+    icon: AiFillAccountBook,
+    skill: "React JS",
+    progress: 80,
+    type: "frontend",
+    description:
+      "Berpengalaman dalam membangun aplikasi web SPA (Single Page Application) dengan ReactJS. Mahir menggunakan konsep komponen, state management (useState, useEffect, Context API), routing dengan React Router, serta integrasi API menggunakan Axios atau Fetch.",
+  },
+  {
+    id: 10,
+    icon: AiFillAccountBook,
+    skill: "Vue JS",
+    progress: 30,
+    type: "frontend",
+    description:
+      "Berpengalaman dalam membangun aplikasi web SPA (Single Page Application) dengan ReactJS. Mahir menggunakan konsep komponen, state management (useState, useEffect, Context API), routing dengan React Router, serta integrasi API menggunakan Axios atau Fetch.",
+  },
+  {
+    id: 11,
+    icon: AiFillAccountBook,
+    skill: "Webflow",
+    progress: 90,
+    type: "Frontend",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
+  },
+  {
+    id: 12,
+    icon: AiFillAccountBook,
+    skill: "Wordpress",
+    progress: 90,
+    type: "Frontend",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
   },
