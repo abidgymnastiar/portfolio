@@ -7,12 +7,14 @@ function AboutMe() {
         Tentang Saya
       </h4>
       <div className="flex flex-col lg:flex-row gap-16 items-start justify-between max-w-[1440px] mx-auto">
-        <div className="w-[300px] md:w-[370px]">
-          <img src={img} alt="" />
+        <div className="w-[300px] md:w-[400px]">
+          <div className="profile-pic bg-tertiary-100 p-9 rounded-3xl shadow-md">
+            <img src={img} alt="" className="" />
+          </div>
         </div>
         <div className="flex-1">
           <h4 className="hidden lg:block w-[200px] section-title text-left">
-          Tentang Saya
+            Tentang Saya
           </h4>
           <p className="text-sm text-justify leading-6 whitespace-pre-line mt-4 text-primaryy-300">
             {ABOUT_ME.content}
