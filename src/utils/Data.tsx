@@ -7,10 +7,10 @@ export const MENU_LINKS = [
 ];
 
 export const STATS = [
-  { id: 1, count: "10", label: "Years of Experience" },
-  { id: 2, count: "12", label: "Certifications Earned" },
-  { id: 3, count: "43", label: "Projects Completed" },
-  { id: 4, count: "37+", label: "Happy Clients" },
+  { id: 1, count: "6", label: "Tahun Pengalaman" },
+  { id: 2, count: "10", label: "Certifikat Dimiliki" },
+  { id: 3, count: "50+", label: "Projek Selesai" },
+  { id: 4, count: "10+", label: "Client Puas" },
 ];
 
 export const SKILL_TABS = [
