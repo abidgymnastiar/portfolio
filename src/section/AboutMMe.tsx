@@ -2,8 +2,8 @@ import { ABOUT_ME } from "../utils/Data";
 import img from "../assets/aktor.png";
 function AboutMe() {
   return (
-    <section id="about" className="w-full py-10 mx-auto">
-      <h4 className="block lg:hidden w-[200px] section-title text-left mb-16">
+    <section id="about" className="w-full px-5 py-10 mx-auto">
+      <h4 className="block lg:hidden w-[200px] section-title text-left mb-10">
         Tentang Saya
       </h4>
       <div className="flex flex-col lg:flex-row gap-16 items-start justify-between max-w-[1440px] mx-auto">
