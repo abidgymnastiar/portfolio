@@ -22,7 +22,7 @@ function TechnicalProficiency() {
   };
   return (
     <section id="skills">
-      <div className="max-w-[1440px] rounded-3xl py-10 mx-auto">
+      <div className="max-w-[1440px] rounded-3xl py-10 px-5 mx-auto">
         <div className="w-full lg:w-[60vw] mx-auto">
           <h4 className="section-title">Kemampuan Teknis</h4>
           <p className="text-sm text-center mt-4 leading-6 text-primaryy-300">

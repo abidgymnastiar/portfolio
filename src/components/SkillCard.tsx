@@ -24,7 +24,7 @@ function SkillCard({ icon, skillName, description, progress }: SkillProps) {
             </div>
             <div className="w-full bg-white rounded-md h-[5px] relative mt-2 overflow-hidden">
               <div
-                className="h-full bg-gradient-to-r from-quaternary-100 to-quaternary-200 rounded-md transition-all duration-500"
+                className="h-full bg-quaternary-300 rounded-md transition-all duration-500"
                 style={{ width: `${progress}%` }}
               ></div>
             </div>

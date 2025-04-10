@@ -26,7 +26,7 @@ function Tabs({ tabList, activeTab, onChange }: TabsProps) {
             key={tab.id}
             initial={{ opacity: 0.0, scale: 1 }}
             animate={{ opacity: activeTab === tab.value ? 1 : 0.8, scale: activeTab === tab.value ? 1.05 : 1 }}
-            className={`text-xs, md:text-[15px] ${getActiveStyles(
+            className={`text-sm md:text-[15px] ${getActiveStyles(
               tab.value
             )} rounded-full px-4 md:px-10 py-[6px] md:py-3`}
             onClick={() => onChange(tab.value)}
