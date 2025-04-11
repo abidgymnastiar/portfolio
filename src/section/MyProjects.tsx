@@ -29,12 +29,15 @@ function MyProjects() {
           <h4 className="section-title">Projek Terbaru</h4>
 
           <p className="text-sm text-center mt-4 leading-6 text-primaryy-300">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-            nostrum impedit quibusdam dolorem! Ipsa est iusto cumque vel! Minus
-            ad voluptas id amet perspiciatis corrupti repellendus recusandae
-            quibusdam hic dolorum. Labore deserunt obcaecati dolorem praesentium
-            mollitia eos blanditiis perspiciatis, incidunt rerum dolor vitae
-            maxime
+            Projek-projek terbaru yang saya kerjakan berfokus pada pembuatan
+            antarmuka web yang cepat, adaptif, dan mudah digunakan. Setiap
+            proyek dirancang dengan pendekatan visual yang bersih serta struktur
+            kode yang efisien, memastikan performa optimal di berbagai
+            perangkat. Saya juga terbiasa membangun halaman yang dapat
+            dikustomisasi dengan mudah oleh pengguna, serta mengintegrasikan
+            berbagai layanan eksternal sesuai kebutuhan klien. Lewat pengalaman
+            ini, saya terus mengembangkan kemampuan dalam menciptakan solusi
+            digital yang relevan dan berdampak nyata.
           </p>
         </div>
         <div className="relative">

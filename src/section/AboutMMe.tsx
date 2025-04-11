@@ -7,7 +7,7 @@ function AboutMe() {
         Tentang Saya
       </h4>
       <div className="flex flex-col lg:flex-row gap-16 items-start justify-between max-w-[1440px] mx-auto">
-        <div className="w-[300px] md:w-[400px]">
+        <div className="">
           <div className="profile-pic bg-tertiary-100 p-9 rounded-3xl shadow-md">
             <img src={img} alt="" className="" />
           </div>
