@@ -20,12 +20,12 @@ export const SKILL_TABS = [
   { id: "4", label: "Database", value: "Database" },
 ];
 
-import { AiFillAccountBook } from "react-icons/ai";
+import { html, css, js, java, php, python, bootstrap,tailwindcss,motion,mysql,react, vue, webflow, wordpress } from "./ImageImports";
 
 export const SKILLS = [
   {
     id: 1,
-    icon: AiFillAccountBook,
+    icon: html,
     skill: "HTML",
     progress: 40,
     type: "frontend",
@@ -34,7 +34,7 @@ export const SKILLS = [
   },
   {
     id: 2,
-    icon: AiFillAccountBook,
+    icon: css,
     skill: "CSS",
     progress: 40,
     type: "Webflow",
@@ -43,7 +43,7 @@ export const SKILLS = [
   },
   {
     id: 3,
-    icon: AiFillAccountBook,
+    icon: js,
     skill: "JavaScript",
     progress: 15,
     type: "frontend",
@@ -52,70 +52,70 @@ export const SKILLS = [
   },
   {
     id: 4,
-    icon: AiFillAccountBook,
+    icon: java,
     skill: "Java",
     progress: 80,
     type: "backend",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
+      "Terampil dalam pengembangan aplikasi menggunakan Java dengan pendekatan berorientasi objek (OOP). Familiar dengan konsep dasar hingga lanjutan seperti inheritance, polymorphism, dan exception handling. Memiliki pengalaman dalam pembuatan aplikasi desktop dan backend",
   },
   {
     id: 5,
-    icon: AiFillAccountBook,
+    icon: php,
     skill: "PHP",
     progress: 50,
     type: "backend",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
+      "Berpengalaman dalam pengembangan backend menggunakan PHP, termasuk dalam membangun sistem manajemen konten (CMS), autentikasi pengguna, dan pengolahan data dinamis. Terbiasa menggunakan PHP untuk membuat website dinamis dan integrasi dengan database MySQL. Memahami konsep dasar pemrograman PHP serta struktur MVC dalam pengembangan aplikasi web.",
   },
   {
     id: 6,
-    icon: AiFillAccountBook,
+    icon: python,
     skill: "Python",
     progress: 75,
     type: "backend",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
+      "Terampil menggunakan Python untuk berbagai kebutuhan seperti automasi tugas, pemrosesan data, dan pengembangan backend aplikasi. Familiar dengan pustaka populer seperti Pandas, NumPy, dan Flask. Pengalaman mencakup pembuatan API sederhana, data preprocessing, serta integrasi Python dalam pengembangan aplikasi berbasis data dan machine learning dasar.",
   },
   {
     id: 7,
-    icon: AiFillAccountBook,
+    icon: bootstrap,
     skill: "Bootstrap 4",
     progress: 100,
     type: "Frondend",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
+      "Berpengalaman menggunakan Bootstrap 4 untuk membangun antarmuka web yang responsif dan cepat. Terbiasa dengan sistem grid, komponen UI siap pakai, serta kustomisasi tema menggunakan utility dan class yang efisien. Sering digunakan dalam proyek yang memerlukan waktu pengembangan cepat dan tampilan yang konsisten di berbagai perangkat.",
   },
   {
-    id: 6,
-    icon: AiFillAccountBook,
+    id: 8,
+    icon: tailwindcss,
     skill: "Tailwind CSS",
     progress: 100,
     type: "Frondend",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
+      "Terampil menggunakan Tailwind CSS untuk merancang antarmuka modern berbasis utility-first. Memanfaatkan class utility untuk membangun desain yang fleksibel, clean, dan responsif tanpa perlu menulis CSS custom secara berlebihan. Cocok untuk pengembangan antarmuka yang cepat dan konsisten, serta mudah dipadukan dengan framework seperti React dan Vue.",
   },
   {
-    id: 7,
-    icon: AiFillAccountBook,
+    id: 9,
+    icon: motion,
     skill: "Motion",
     progress: 60,
     type: "Frondend",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
+      "Menguasai dasar animasi web untuk meningkatkan interaksi dan pengalaman pengguna. Terbiasa menggunakan properti CSS seperti transition, transform, serta library tambahan seperti Framer Motion untuk animasi di React. Mengerti bagaimana animasi digunakan secara efektif tanpa mengorbankan performa website.",
   },
   {
-    id: 8,
-    icon: AiFillAccountBook,
+    id: 10,
+    icon: mysql,
     skill: "My Sql",
     progress: 100,
     type: "Database",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
+      "Memiliki pengalaman dalam desain, pengelolaan, dan manipulasi database menggunakan MySQL. Terbiasa membuat query untuk operasi CRUD, relasi antar tabel, indexing, serta optimasi query. Sering digunakan dalam pengembangan aplikasi berbasis data dan integrasi backend menggunakan PHP atau Python.",
   },
   {
-    id: 9,
-    icon: AiFillAccountBook,
+    id: 11,
+    icon: react,
     skill: "React JS",
     progress: 80,
     type: "frontend",
@@ -123,31 +123,31 @@ export const SKILLS = [
       "Berpengalaman dalam membangun aplikasi web SPA (Single Page Application) dengan ReactJS. Mahir menggunakan konsep komponen, state management (useState, useEffect, Context API), routing dengan React Router, serta integrasi API menggunakan Axios atau Fetch.",
   },
   {
-    id: 10,
-    icon: AiFillAccountBook,
+    id: 12,
+    icon: vue,
     skill: "Vue JS",
     progress: 30,
     type: "frontend",
     description:
-      "Berpengalaman dalam membangun aplikasi web SPA (Single Page Application) dengan ReactJS. Mahir menggunakan konsep komponen, state management (useState, useEffect, Context API), routing dengan React Router, serta integrasi API menggunakan Axios atau Fetch.",
+      "Memahami dasar pengembangan dengan Vue JS, termasuk penggunaan komponen, binding data, dan directives. Terbiasa membangun antarmuka dinamis dan interaktif, serta memahami konsep reactive data dan penggunaan Vue Router untuk navigasi. Cocok digunakan untuk proyek yang memerlukan struktur ringan dan fleksibel.",
   },
   {
-    id: 11,
-    icon: AiFillAccountBook,
+    id: 13,
+    icon: webflow,
     skill: "Webflow",
     progress: 90,
     type: "Frontend",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
+      "Menguasai Webflow sebagai platform no-code untuk membangun website profesional dengan cepat dan efisien. Terbiasa merancang layout responsif, animasi interaktif, serta struktur SEO-friendly langsung dari editor visual. Webflow saya gunakan untuk prototipe, portofolio, dan klien yang membutuhkan solusi desain cepat tanpa pengkodean manual.",
   },
   {
-    id: 12,
-    icon: AiFillAccountBook,
+    id: 14,
+    icon: wordpress,
     skill: "Wordpress",
     progress: 90,
     type: "Frontend",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
+      "Berpengalaman lebih dari 2,5 tahun dalam pengembangan dan pengelolaan situs menggunakan WordPress. Terampil dalam instalasi, kustomisasi tema dan plugin, serta optimasi performa dan SEO. Terbiasa mengubah desain dari figma/sketsa menjadi situs WordPress fungsional dan mobile-friendly, baik menggunakan tema custom maupun builder seperti Elementor.",
   },
 ];
 

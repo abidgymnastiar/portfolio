@@ -46,7 +46,6 @@ function TechnicalProficiency() {
         />
         <div className="flex gap-4 justify-center flex-wrap ">
           {tabData.map((skill, index) => {
-            const IconComponent = skill.icon;
             return (
               <motion.div
                 key={skill.id}
@@ -56,7 +55,7 @@ function TechnicalProficiency() {
               >
                 <SkillCard
                   key={skill.id}
-                  icon={<IconComponent className="w-6 h-6 text-tertiary-300" />}
+                  icon={skill.icon}
                   skillName={skill.skill}
                   description={skill.description}
                   progress={skill.progress}

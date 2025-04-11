@@ -1,6 +1,6 @@
 import StatInCard from "../components/StatInCard";
 import { STATS } from "../utils/Data";
-import img from "../assets/hero.png";
+import { hero } from "../utils/ImageImports";
 
 function Hero() {
   return (
@@ -32,7 +32,7 @@ function Hero() {
         </div>
         <div className="lg:order-2 order-1">
           <img
-            src={img}
+            src={hero}
             alt="hero"
             className="w-full h-[350px] md:h-[500px] object-cover"
           />

@@ -1,5 +1,5 @@
 interface SkillProps {
-  icon: React.ReactNode;
+  icon: string;
   skillName: string;
   description: string;
   progress: number;
@@ -11,7 +11,7 @@ function SkillCard({ icon, skillName, description, progress }: SkillProps) {
       <div className="bg-tertiary-400 rounded-2xl border border-tertiary-300 p-4 w-[300px]">
         <div className="flex gap-3">
           <div className="w-10 h-10 flex items-center justify-center bg-gradient-to-b from-quaternary-200 to-quaternary-100 rounded-[7px]">
-            {icon}
+            <img src={icon} alt="" className="h-7 w-7"/>
           </div>
           <div className="flex-1">
             <div className="flex items-center justify-between">
