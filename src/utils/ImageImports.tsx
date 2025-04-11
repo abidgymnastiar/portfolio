@@ -7,7 +7,7 @@ export { default as css } from "../assets/Technicall/css.png";
 export { default as js } from "../assets/Technicall/js.png";
 export { default as java } from "../assets/Technicall/java.png";
 export { default as php } from "../assets/Technicall/php.png";
-export { default as python } from "../assets/Technicall/python.png";
+export { default as python } from "../assets/Technicall/Python.png";
 export { default as bootstrap } from "../assets/Technicall/Bootstrap.png";
 export { default as tailwindcss } from "../assets/Technicall/tailwindcss.png";
 export { default as motion } from "../assets/Technicall/motion.png";
