@@ -20,7 +20,22 @@ export const SKILL_TABS = [
   { id: "4", label: "Database", value: "Database" },
 ];
 
-import { html, css, js, java, php, python, bootstrap,tailwindcss,motion,mysql,react, vue, webflow, wordpress } from "./ImageImports";
+import {
+  html,
+  css,
+  js,
+  java,
+  php,
+  python,
+  bootstrap,
+  tailwindcss,
+  motion,
+  mysql,
+  react,
+  vue,
+  webflow,
+  wordpress,
+} from "./ImageImports";
 
 export const SKILLS = [
   {
@@ -151,18 +166,20 @@ export const SKILLS = [
   },
 ];
 
-import { FaFacebookSquare } from "react-icons/fa";
+import { GrInstagram } from "react-icons/gr";
+import { FaTelegram } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 export const ABOUT_ME = {
   content:
     "Saya adalah seorang pengembang front-end yang memiliki keahlian dan minat besar dalam menciptakan antarmuka web yang modern, responsif, dan user-friendly. Selama lebih dari 2,5 tahun saya bekerja secara profesional di Oke Web, sebuah perusahaan pengembang website, di mana saya terlibat langsung dalam berbagai proyek pembuatan dan pengelolaan situs web klien dari berbagai industri. Dalam peran tersebut, saya mengembangkan kemampuan mendalam dalam penggunaan WordPress, mulai dari instalasi, kustomisasi tema dan plugin, hingga optimalisasi performa dan SEO. Saya terbiasa menggunakan teknologi web modern seperti HTML, CSS, JavaScript, serta framework seperti Tailwind CSS, Bootstrap, dan ReactJS untuk membangun antarmuka yang interaktif dan menarik. Saya juga mahir mengubah desain UI/UX menjadi tampilan web fungsional yang optimal di berbagai perangkat, baik desktop maupun mobile. Dalam pengembangan aplikasi web, saya memahami konsep seperti responsive layout (Flexbox, Grid), animasi dan transisi, state management di ReactJS (useState, useEffect, Context API), serta integrasi API menggunakan Axios atau Fetch. Selain sisi front-end, saya memiliki dasar yang kuat dalam pengembangan backend menggunakan PHP dan Python, serta pengelolaan database dengan MySQL. Saya juga memiliki pengalaman menggunakan Webflow untuk pengembangan visual tanpa kode, serta mengembangkan beberapa proyek pribadi menggunakan framework modern dan platform CMS. Komitmen saya adalah terus berkembang, beradaptasi dengan teknologi baru, dan menghadirkan solusi digital yang efektif dan bernilai tinggi.",
 
   sosialLinks: [
-    { id: "01", label: "Facebook", icon: FaFacebookSquare, link: "#" },
-    { id: "02", label: "Instagram", icon: FaFacebookSquare, link: "#" },
-    { id: "03", label: "Twitter", icon: FaFacebookSquare, link: "#" },
-    { id: "04", label: "LinkedIn", icon: FaFacebookSquare, link: "#" },
-    { id: "05", label: "Github", icon: FaFacebookSquare, link: "#" },
+    { id: "01", label: "Instagram", icon: GrInstagram, link: "#" },
+    { id: "02", label: "Telegram", icon: FaTelegram, link: "#" },
+    { id: "03", label: "LinkedIn", icon: FaLinkedin, link: "#" },
+    { id: "04", label: "Github", icon: FaGithub, link: "#" },
   ],
 
   email: "abidgymnastiar@gmail.com",
