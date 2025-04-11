@@ -59,6 +59,8 @@ function TechnicalProficiency() {
                   skillName={skill.skill}
                   description={skill.description}
                   progress={skill.progress}
+                  experience={skill.experience}
+
                 />
               </motion.div>
             );

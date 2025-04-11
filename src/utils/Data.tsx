@@ -46,7 +46,8 @@ export const SKILLS = [
     type: "frontend",
     description:
       "Terampil dalam membuat desain web yang menarik dan responsif menggunakan Flexbox, Grid, serta animasi dan transisi. Familiar dengan framework seperti Tailwind CSS dan Bootstrap.",
-  },
+  experience:"2 Tahun"
+    },
   {
     id: 2,
     icon: css,
@@ -55,7 +56,8 @@ export const SKILLS = [
     type: "Webflow",
     description:
       "Terampil dalam membuat desain web yang menarik dan responsif menggunakan Flexbox, Grid, serta animasi dan transisi. Familiar dengan framework seperti Tailwind CSS dan Bootstrap.",
-  },
+  experience:"2 Tahun"
+    },
   {
     id: 3,
     icon: js,
@@ -64,7 +66,8 @@ export const SKILLS = [
     type: "frontend",
     description:
       "Menguasai JavaScript modern untuk pengembangan fitur interaktif pada website. Terbiasa menggunakan fitur seperti arrow function, async/await, destructuring, dan modular programming.",
-  },
+  experience:"2 Tahun"
+    },
   {
     id: 4,
     icon: java,
@@ -73,7 +76,8 @@ export const SKILLS = [
     type: "backend",
     description:
       "Terampil dalam pengembangan aplikasi menggunakan Java dengan pendekatan berorientasi objek (OOP). Familiar dengan konsep dasar hingga lanjutan seperti inheritance, polymorphism, dan exception handling. Memiliki pengalaman dalam pembuatan aplikasi desktop dan backend",
-  },
+  experience:"2 Tahun"
+    },
   {
     id: 5,
     icon: php,
@@ -82,7 +86,8 @@ export const SKILLS = [
     type: "backend",
     description:
       "Berpengalaman dalam pengembangan backend menggunakan PHP, termasuk dalam membangun sistem manajemen konten (CMS), autentikasi pengguna, dan pengolahan data dinamis. Terbiasa menggunakan PHP untuk membuat website dinamis dan integrasi dengan database MySQL. Memahami konsep dasar pemrograman PHP serta struktur MVC dalam pengembangan aplikasi web.",
-  },
+  experience:"2 Tahun"
+    },
   {
     id: 6,
     icon: python,
@@ -91,7 +96,8 @@ export const SKILLS = [
     type: "backend",
     description:
       "Terampil menggunakan Python untuk berbagai kebutuhan seperti automasi tugas, pemrosesan data, dan pengembangan backend aplikasi. Familiar dengan pustaka populer seperti Pandas, NumPy, dan Flask. Pengalaman mencakup pembuatan API sederhana, data preprocessing, serta integrasi Python dalam pengembangan aplikasi berbasis data dan machine learning dasar.",
-  },
+  experience:"2 Tahun"
+    },
   {
     id: 7,
     icon: bootstrap,
@@ -100,7 +106,8 @@ export const SKILLS = [
     type: "Frondend",
     description:
       "Berpengalaman menggunakan Bootstrap 4 untuk membangun antarmuka web yang responsif dan cepat. Terbiasa dengan sistem grid, komponen UI siap pakai, serta kustomisasi tema menggunakan utility dan class yang efisien. Sering digunakan dalam proyek yang memerlukan waktu pengembangan cepat dan tampilan yang konsisten di berbagai perangkat.",
-  },
+  experience:"2 Tahun"
+    },
   {
     id: 8,
     icon: tailwindcss,
@@ -109,7 +116,8 @@ export const SKILLS = [
     type: "Frondend",
     description:
       "Terampil menggunakan Tailwind CSS untuk merancang antarmuka modern berbasis utility-first. Memanfaatkan class utility untuk membangun desain yang fleksibel, clean, dan responsif tanpa perlu menulis CSS custom secara berlebihan. Cocok untuk pengembangan antarmuka yang cepat dan konsisten, serta mudah dipadukan dengan framework seperti React dan Vue.",
-  },
+  experience:"2 Tahun"
+    },
   {
     id: 9,
     icon: motion,
@@ -118,7 +126,8 @@ export const SKILLS = [
     type: "Frondend",
     description:
       "Menguasai dasar animasi web untuk meningkatkan interaksi dan pengalaman pengguna. Terbiasa menggunakan properti CSS seperti transition, transform, serta library tambahan seperti Framer Motion untuk animasi di React. Mengerti bagaimana animasi digunakan secara efektif tanpa mengorbankan performa website.",
-  },
+  experience:"2 Tahun"
+    },
   {
     id: 10,
     icon: mysql,
@@ -127,7 +136,8 @@ export const SKILLS = [
     type: "Database",
     description:
       "Memiliki pengalaman dalam desain, pengelolaan, dan manipulasi database menggunakan MySQL. Terbiasa membuat query untuk operasi CRUD, relasi antar tabel, indexing, serta optimasi query. Sering digunakan dalam pengembangan aplikasi berbasis data dan integrasi backend menggunakan PHP atau Python.",
-  },
+  experience:"2 Tahun"
+    },
   {
     id: 11,
     icon: react,
@@ -136,7 +146,8 @@ export const SKILLS = [
     type: "frontend",
     description:
       "Berpengalaman dalam membangun aplikasi web SPA (Single Page Application) dengan ReactJS. Mahir menggunakan konsep komponen, state management (useState, useEffect, Context API), routing dengan React Router, serta integrasi API menggunakan Axios atau Fetch.",
-  },
+  experience:"2 Tahun"
+    },
   {
     id: 12,
     icon: vue,
@@ -145,7 +156,8 @@ export const SKILLS = [
     type: "frontend",
     description:
       "Memahami dasar pengembangan dengan Vue JS, termasuk penggunaan komponen, binding data, dan directives. Terbiasa membangun antarmuka dinamis dan interaktif, serta memahami konsep reactive data dan penggunaan Vue Router untuk navigasi. Cocok digunakan untuk proyek yang memerlukan struktur ringan dan fleksibel.",
-  },
+  experience:"2 Tahun"
+    },
   {
     id: 13,
     icon: webflow,
@@ -154,7 +166,8 @@ export const SKILLS = [
     type: "Frontend",
     description:
       "Menguasai Webflow sebagai platform no-code untuk membangun website profesional dengan cepat dan efisien. Terbiasa merancang layout responsif, animasi interaktif, serta struktur SEO-friendly langsung dari editor visual. Webflow saya gunakan untuk prototipe, portofolio, dan klien yang membutuhkan solusi desain cepat tanpa pengkodean manual.",
-  },
+  experience:"2 Tahun"
+    },
   {
     id: 14,
     icon: wordpress,
@@ -163,7 +176,8 @@ export const SKILLS = [
     type: "Frontend",
     description:
       "Berpengalaman lebih dari 2,5 tahun dalam pengembangan dan pengelolaan situs menggunakan WordPress. Terampil dalam instalasi, kustomisasi tema dan plugin, serta optimasi performa dan SEO. Terbiasa mengubah desain dari figma/sketsa menjadi situs WordPress fungsional dan mobile-friendly, baik menggunakan tema custom maupun builder seperti Elementor.",
-  },
+  experience:"2 Tahun"
+    },
 ];
 
 import { GrInstagram } from "react-icons/gr";
