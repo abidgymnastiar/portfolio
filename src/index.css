@@ -42,6 +42,6 @@
     @apply absolute top-1/2 transform -translate-y-1/2 bg-secondaryy-400 hover:bg-secondaryy-100 text-white p-2 rounded-full  shadow;
   }
   .profile-pic {
-    @apply w-[100px] md:w-[200px] rotate-[3deg] transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:-rotate-[0deg];
+    @apply w-[300px] md:w-[370px] rotate-[3deg] transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:-rotate-[0deg];
   }
 }

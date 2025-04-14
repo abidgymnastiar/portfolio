@@ -1,5 +1,5 @@
 import StatInCard from "../components/StatInCard";
-import { STATS } from "../utils/Data";
+import { ABOUT_ME, STATS } from "../utils/Data";
 import { hero } from "../utils/ImageImports";
 
 function Hero() {
@@ -21,7 +21,18 @@ function Hero() {
             tahun yang memiliki keahlian dalam pengembangan front-end, desain
             responsif, serta meningkatkan performa website dengan SEO.
           </p>
-          <div className="flex justify-center lg:justify-start gap-4 md:gap-8 mt-6">
+          <div className="flex gap-4 mt-4">
+            {ABOUT_ME.sosialLinks.map((item) => (
+              <a
+                key={item.id}
+                href={item.link}
+                className="text-primary hover:text-secondaryy-400 transition duration-300 group"
+              >
+                <item.icon className="text-2xl text-quaternary-300 transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110 group-hover:translate-y-[-2px] group-hover:text-secondaryy-400" />
+              </a>
+            ))}
+          </div>
+          <div className="flex justify-center lg:justify-start gap-4 md:gap-8 mt-8">
             <button className="flex-1 md:flex-none action-btn-outline btn-scale-anim">
               Lihat Pekerjaan Saya
             </button>

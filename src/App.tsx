@@ -12,7 +12,7 @@ function App() {
       <Navbar />
       <Hero />
       <TechnicalProficiency />
-      <AboutMe />
+      {/* <AboutMe /> */}
       <MyProjects />
       <ContactMe />
       <Footer />
