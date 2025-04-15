@@ -16,3 +16,9 @@ export { default as react } from "../assets/Technicall/react.svg";
 export { default as vue } from "../assets/Technicall/vue.png";
 export { default as webflow } from "../assets/Technicall/webflow.png";
 export { default as wordpress } from "../assets/Technicall/WordPress.png";
+
+
+// projectImg 
+
+export { default as pj1Desktop } from "../assets/Project/Pj-1/LandingPageDesktop.png";
+export { default as pj1Mobile } from "../assets/Project/Pj-1/LandingPageMobile.png";
