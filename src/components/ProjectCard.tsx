@@ -10,10 +10,10 @@ function ProjectCard({ imgUrl, title, tags }: ProjectCardProps) {
       <img
         src={imgUrl}
         alt={title}
-        className="w-full h-72 md:h-80 object-cover"
+        className="w-full h-72 md:h-80 object-top object-cover"
       />
       <div className="px-4 py-5">
-        <h3 className="text-base font-semibold line-clamp-2 overflow-hidden text-ellipsis text-primaryy-200">
+        <h3 className="text-base text-start font-semibold line-clamp-2 overflow-hidden text-ellipsis text-primaryy-200">
           {title}
         </h3>
         <div className="flex flex-wrap gap-2 mt-2">
