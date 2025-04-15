@@ -1,14 +1,17 @@
+// import { motion } from "motion/react";
 import useEmblaCarousel from "embla-carousel-react";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import { useCallback, useEffect, useState } from "react";
 import ProjectCard from "../components/ProjectCard";
 import { PROJECTS } from "../utils/Data";
+import DetailProject from "../components/Modal/DetailProject";
 
 function MyProjects() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "start" });
   const [canScrollPrev, setCanScrollPrev] = useState(false);
   const [canScrollNext, setCanScrollNext] = useState(true);
+  const [open, setOpen] = useState<boolean>(false);
 
   const updateScrollButton = useCallback(() => {
     if (!emblaApi) return;
@@ -44,19 +47,23 @@ function MyProjects() {
           <div className="overflow-hidden" ref={emblaRef}>
             <div className="flex pt-14 pb-8">
               {PROJECTS.map((project) => (
-                <div
+                <button
                   key={project.id}
                   className="min-w-[100%] sm:min-w-[50%] lg:min-w-[33%]"
+                  onClick={() => setOpen(true)}
                 >
+                  {/* <motion.button className="min-w-full sm:min-w-1/2 lg:min-w-1/3"> */}
                   <ProjectCard
                     key={project.id}
                     imgUrl={project.image}
                     title={project.title}
                     tags={project.tags.map((tag) => ({ tags: tag }))}
                   />
-                </div>
+                  {/* </motion.button> */}
+                </button>
               ))}
             </div>
+            <DetailProject open={open} onClose={()=>setOpen(false)}/>
           </div>
           <button
             className={`arrow-btn -left-5 ${
