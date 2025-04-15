@@ -1,7 +1,7 @@
 import Hero from "./section/Hero";
 import Navbar from "./components/Navbar";
 import TechnicalProficiency from "./section/TechnicalProficiency";
-import AboutMe from "./section/AboutMMe";
+// import AboutMe from "./section/AboutMMe";
 import MyProjects from "./section/MyProjects";
 import ContactMe from "./section/ContactMe";
 import Footer from "./section/Footer";
