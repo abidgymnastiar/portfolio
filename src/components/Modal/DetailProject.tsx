@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import { CgClose } from "react-icons/cg";
-import img from "../../assets/Project/Pj-1/LandingPagedesktop.png";
-import img2 from "../../assets/Project/Pj-1/LandingPageMobile.png";
 
 interface DetailedHTMLProps {
   open: boolean;
@@ -15,7 +13,7 @@ interface DetailedHTMLProps {
 }
 
 function DetailProject({ open, onClose, data }: DetailedHTMLProps) {
-  const [mainImage, setMainImage] = useState(img);
+  const [mainImage, setMainImage] = useState<string | null>(null);
 
   useEffect(() => {
     if (data && data.image && data.image.length > 0) {
