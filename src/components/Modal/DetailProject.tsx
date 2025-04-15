@@ -43,7 +43,7 @@ function DetailProject({ open, onClose, data }: DetailedHTMLProps) {
         <div className="flex flex-row w-full gap-3">
           {/* Gambar utama */}
           <div className="max-h-[400px] overflow-y-auto mb-4 w-full">
-            <img src={mainImage} alt="Landing Page" className="w-full" />
+            <img src={mainImage || ""} alt="Landing Page" className="w-full" />
           </div>
 
           {/* Thumbnail */}
