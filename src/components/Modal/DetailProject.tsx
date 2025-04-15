@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { CgClose } from "react-icons/cg";
 import img from "../../assets/Project/Pj-1/LandingPagedesktop.png";
 import img2 from "../../assets/Project/Pj-1/LandingPageMobile.png";
@@ -6,10 +6,24 @@ import img2 from "../../assets/Project/Pj-1/LandingPageMobile.png";
 interface DetailedHTMLProps {
   open: boolean;
   onClose: () => void;
+  data?: {
+    title: string;
+    image: string[];
+    tags: string[];
+    description?: string;
+  };
 }
 
-function DetailProject({ open, onClose }: DetailedHTMLProps) {
+function DetailProject({ open, onClose, data }: DetailedHTMLProps) {
   const [mainImage, setMainImage] = useState(img);
+
+  useEffect(() => {
+    if (data && data.image && data.image.length > 0) {
+      setMainImage(data.image[0]);
+    }
+  }, [data]);
+
+  if (!data) return null;
 
   return (
     <div
@@ -36,7 +50,7 @@ function DetailProject({ open, onClose }: DetailedHTMLProps) {
 
           {/* Thumbnail */}
           <div className="w-[100px] flex flex-col gap-2">
-            {[img, img2].map((thumbnail, index) => (
+            {data.image.map((thumbnail, index) => (
               <div
                 key={index}
                 onClick={() => setMainImage(thumbnail)}
@@ -52,16 +66,22 @@ function DetailProject({ open, onClose }: DetailedHTMLProps) {
           </div>
         </div>
 
-        <div className="flex flex-wrap gap-2 mt-2">
-          <span className="text-xs text-tertiary-600 bg-quaternary-300 px-3 py-1 rounded">
-            webflow
-          </span>
+        {/* Tags */}
+        <div className="flex flex-wrap gap-2 mt-4">
+          {data.tags.map((tag, index) => (
+            <span
+              key={index}
+              className="text-xs text-white bg-blue-500 px-3 py-1 rounded-full"
+            >
+              {tag}
+            </span>
+          ))}
         </div>
 
-        {/* <h1 className="text-xl font-semibold mt-4 mb-2">Detail Project show project</h1> */}
-        <p>Details about the project will be displayed here.</p>
+        {data.description && (
+          <p className="mt-4 text-sm text-gray-700">{data.description}</p>
+        )}
       </div>
-      <p>Show Project</p>
     </div>
   );
 }

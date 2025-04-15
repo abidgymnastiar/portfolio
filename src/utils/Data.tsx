@@ -207,26 +207,26 @@ export const PROJECTS = [
   {
     id: "1",
     title: "fundsphere",
-    image: pj1Desktop,
+    image:[pj1Desktop, pj1Mobile],
     tags: ["Webflow"],
-  description: "Details about the project..."
+    description: "Details about the project...",
   },
   {
     id: "2",
     title: "Project 2",
-    image: pj1Mobile,
+    image: [pj1Mobile],
     tags: ["React", "JavaScript", "CSS"],
   },
   {
     id: "3",
     title: "Project 3",
-    image: pj1Mobile,
+    image: [pj1Mobile],
     tags: ["React", "JavaScript", "CSS"],
   },
   {
     id: "4",
     title: "Project 4",
-    image: pj1Mobile,
+    image: [pj1Mobile],
     tags: ["React", "JavaScript", "CSS"],
   },
 ];

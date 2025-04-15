@@ -7,11 +7,20 @@ import ProjectCard from "../components/ProjectCard";
 import { PROJECTS } from "../utils/Data";
 import DetailProject from "../components/Modal/DetailProject";
 
+interface ProjectType {
+  id: string;
+  title: string;
+  image: string[];
+  tags: string[];
+  description?: string;
+}
+
 function MyProjects() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "start" });
   const [canScrollPrev, setCanScrollPrev] = useState(false);
   const [canScrollNext, setCanScrollNext] = useState(true);
   const [open, setOpen] = useState<boolean>(false);
+  const [selectedProject, setSelectedProject] = useState<ProjectType | null>(null);
 
   const updateScrollButton = useCallback(() => {
     if (!emblaApi) return;
@@ -50,12 +59,15 @@ function MyProjects() {
                 <button
                   key={project.id}
                   className="min-w-[100%] sm:min-w-[50%] lg:min-w-[33%]"
-                  onClick={() => setOpen(true)}
+                  onClick={() => {
+                    setSelectedProject(project);
+                    setOpen(true);
+                  }}
                 >
                   {/* <motion.button className="min-w-full sm:min-w-1/2 lg:min-w-1/3"> */}
                   <ProjectCard
                     key={project.id}
-                    imgUrl={project.image}
+                    imgUrl={project.image[0]}
                     title={project.title}
                     tags={project.tags.map((tag) => ({ tags: tag }))}
                   />
@@ -63,7 +75,11 @@ function MyProjects() {
                 </button>
               ))}
             </div>
-            <DetailProject open={open} onClose={()=>setOpen(false)}/>
+            <DetailProject
+              open={open}
+              onClose={() => setOpen(false)}
+              data={selectedProject || undefined}
+            />
           </div>
           <button
             className={`arrow-btn -left-5 ${
