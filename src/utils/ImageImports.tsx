@@ -20,5 +20,12 @@ export { default as wordpress } from "../assets/Technicall/WordPress.png";
 
 // projectImg 
 
+// pj1
 export { default as pj1Desktop } from "../assets/Project/Pj-1/LandingPageDesktop.png";
 export { default as pj1Mobile } from "../assets/Project/Pj-1/LandingPageMobile.png";
+// pj2
+export { default as pj2Desktop } from "../assets/Project/pj-2/LandingPageDesktop.png";
+export { default as pj2Mobile } from "../assets/Project/pj-2/LandingPageMobile.jpg";
+// pj3
+export { default as pj3Desktop } from "../assets/Project/pj-3/LandingPageDesktop.png";
+export { default as pj3Mobile } from "../assets/Project/pj-3/LandingPageMobile.png";

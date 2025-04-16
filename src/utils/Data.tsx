@@ -201,32 +201,37 @@ export const ABOUT_ME = {
   address: "Ponorogo, East Java, Indonesia",
 };
 
-import { pj1Desktop, pj1Mobile } from "./ImageImports";
+import { pj1Desktop, pj1Mobile,pj2Desktop,pj2Mobile,pj3Desktop,pj3Mobile } from "./ImageImports";
 
 export const PROJECTS = [
   {
     id: "1",
-    title: "fundsphere",
-    image:[pj1Desktop, pj1Mobile],
+    title: "fundsphere Landing Page",
+    image: [pj1Desktop, pj1Mobile],
     tags: ["Webflow"],
     description: "Details about the project...",
+    link: "#",
   },
   {
     id: "2",
-    title: "Project 2",
-    image: [pj1Mobile],
-    tags: ["React", "JavaScript", "CSS"],
+    title: "FinWealth",
+    image: [pj2Desktop, pj2Mobile],
+    tags: ["Webflow"],
+    description: "Details about the project...",
+    link: "#",
   },
   {
     id: "3",
-    title: "Project 3",
-    image: [pj1Mobile],
-    tags: ["React", "JavaScript", "CSS"],
+    title: "FinWealth CMS",
+    image: [pj3Desktop, pj3Mobile],
+    tags: ["Webflow"],
+    description: "Details about the project...",
+    link: "#",
   },
   {
     id: "4",
-    title: "Project 4",
-    image: [pj1Mobile],
-    tags: ["React", "JavaScript", "CSS"],
+    title: "fundsphere Landing Page",
+    image: [pj1Desktop, pj1Mobile],
+    tags: ["React"],
   },
 ];
