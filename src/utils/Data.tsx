@@ -1,7 +1,7 @@
 export const MENU_LINKS = [
   { id: 1, label: "Home", offset: -100, to: "hero" },
   { id: 2, label: "Skills", offset: -100, to: "skills" },
-  { id: 3, label: "About Me", offset: -100, to: "about" },
+  // { id: 3, label: "About Me", offset: -100, to: "about" },
   { id: 4, label: "Projects", offset: -100, to: "projects" },
   { id: 5, label: "Contact", offset: -100, to: "contact" },
 ];
@@ -197,7 +197,7 @@ export const ABOUT_ME = {
   ],
 
   email: "abidgymnastiar@gmail.com",
-  phone: "+62 812-3456-7890",
+  phone: "+62 838-4185-2915",
   address: "Ponorogo, East Java, Indonesia",
 };
 

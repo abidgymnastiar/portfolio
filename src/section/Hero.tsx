@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import StatInCard from "../components/StatInCard";
 import { ABOUT_ME, STATS } from "../utils/Data";
 import { hero } from "../utils/ImageImports";
@@ -33,12 +34,27 @@ function Hero() {
             ))}
           </div>
           <div className="flex justify-center lg:justify-start gap-4 md:gap-8 mt-8">
-            <button className="flex-1 md:flex-none action-btn-outline btn-scale-anim">
-              Lihat Pekerjaan Saya
-            </button>
-            <button className="flex-1 md:flex-none action-btn btn-scale-anim">
-              Kontak Saya
-            </button>
+            <Link
+              activeClass="active"
+              to="projects"
+              smooth
+              spy
+              offset={-100}
+              className=""
+            >
+              <button className="flex-1 md:flex-none action-btn-outline btn-scale-anim">
+                Lihat Pekerjaan Saya
+              </button>
+            </Link>
+            <a
+              href="https://api.whatsapp.com/send/?phone=6283841852915&text&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="flex-1 md:flex-none action-btn btn-scale-anim">
+                Kontak Saya
+              </button>
+            </a>
           </div>
         </div>
         <div className="lg:order-2 order-1">
