@@ -201,7 +201,14 @@ export const ABOUT_ME = {
   address: "Ponorogo, East Java, Indonesia",
 };
 
-import { pj1Desktop, pj1Mobile,pj2Desktop,pj2Mobile,pj3Desktop,pj3Mobile } from "./ImageImports";
+import {
+  pj1Desktop,
+  pj1Mobile,
+  pj2Desktop,
+  pj2Mobile,
+  pj3Desktop,
+  pj3Mobile,
+} from "./ImageImports";
 
 export const PROJECTS = [
   {
@@ -210,7 +217,7 @@ export const PROJECTS = [
     image: [pj1Desktop, pj1Mobile],
     tags: ["Webflow"],
     description: "Details about the project...",
-    link: "#",
+    link: "https://preview.webflow.com/preview/fundsphere-4c14bc?utm_medium=preview_link&utm_source=designer&utm_content=fundsphere-4c14bc&preview=fb24b4d5df3c7b4ca33729171cde5b97&workflow=preview",
   },
   {
     id: "2",
@@ -218,7 +225,7 @@ export const PROJECTS = [
     image: [pj2Desktop, pj2Mobile],
     tags: ["Webflow"],
     description: "Details about the project...",
-    link: "#",
+    link: "https://preview.webflow.com/preview/finwealth-0a1873?utm_medium=preview_link&utm_source=designer&utm_content=finwealth-0a1873&preview=31d71055b619df3588ad8d785dffb1d2&workflow=preview",
   },
   {
     id: "3",
@@ -226,12 +233,14 @@ export const PROJECTS = [
     image: [pj3Desktop, pj3Mobile],
     tags: ["Webflow"],
     description: "Details about the project...",
-    link: "#",
+    link: "https://preview.webflow.com/preview/finwealth-817530?utm_medium=preview_link&utm_source=designer&utm_content=finwealth-817530&preview=d199aefdfb9491462afd4e69dc5b9578&workflow=preview",
   },
   {
     id: "4",
     title: "fundsphere Landing Page",
     image: [pj1Desktop, pj1Mobile],
     tags: ["React"],
+    description: "Details about the project...",
+    link: "https://fundsphere-psi.vercel.app/",
   },
 ];
