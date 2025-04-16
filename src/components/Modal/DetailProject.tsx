@@ -9,6 +9,7 @@ interface DetailedHTMLProps {
     image: string[];
     tags: string[];
     description?: string;
+    link?: string;
   };
 }
 
@@ -36,7 +37,7 @@ function DetailProject({ open, onClose, data }: DetailedHTMLProps) {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex flex-row justify-between items-center mb-4">
-          <h2>Project 1</h2>
+          <h2>{data.title}</h2>
           <CgClose className="cursor-pointer" onClick={onClose} />
         </div>
 
@@ -79,6 +80,16 @@ function DetailProject({ open, onClose, data }: DetailedHTMLProps) {
         {data.description && (
           <p className="mt-4 text-sm text-gray-700">{data.description}</p>
         )}
+        <div className="">
+          <a
+            href="#"
+            className="text-blue-500"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Tampilan Projek
+          </a>
+        </div>
       </div>
     </div>
   );

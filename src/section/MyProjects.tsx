@@ -13,6 +13,7 @@ interface ProjectType {
   image: string[];
   tags: string[];
   description?: string;
+  link?: string;
 }
 
 function MyProjects() {
