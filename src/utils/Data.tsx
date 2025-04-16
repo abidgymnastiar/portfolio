@@ -208,6 +208,8 @@ import {
   pj2Mobile,
   pj3Desktop,
   pj3Mobile,
+  pj5Desktop,
+  pj5Mobile,
 } from "./ImageImports";
 
 export const PROJECTS = [
@@ -242,5 +244,13 @@ export const PROJECTS = [
     tags: ["React"],
     description: "Details about the project...",
     link: "https://fundsphere-psi.vercel.app/",
+  },
+  {
+    id: "5",
+    title: "Poke-app",
+    image: [pj5Desktop, pj5Mobile],
+    tags: ["React"],
+    description: "Details about the project...",
+    link: "https://poke-app-alpha.vercel.app/",
   },
 ];

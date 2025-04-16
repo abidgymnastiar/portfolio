@@ -29,3 +29,6 @@ export { default as pj2Mobile } from "../assets/Project/pj-2/LandingPageMobile.j
 // pj3
 export { default as pj3Desktop } from "../assets/Project/pj-3/LandingPageDesktop.png";
 export { default as pj3Mobile } from "../assets/Project/pj-3/LandingPageMobile.png";
+// pj5
+export { default as pj5Desktop } from "../assets/Project/pj-5/LandingPageDesktop.png";
+export { default as pj5Mobile } from "../assets/Project/pj-5/LandingPageMobile.png";
