@@ -82,7 +82,7 @@ function DetailProject({ open, onClose, data }: DetailedHTMLProps) {
         )}
         <div className="">
           <a
-            href="#"
+            href={data.link}
             className="text-blue-500"
             target="_blank"
             rel="noopener noreferrer"
