@@ -5,7 +5,7 @@ import TechnicalProficiency from "./section/TechnicalProficiency";
 import MyProjects from "./section/MyProjects";
 import ContactMe from "./section/ContactMe";
 import Footer from "./section/Footer";
-import Blog from "./section/blog";
+import Blog from "./section/Blogg";
 
 function App() {
   return (
