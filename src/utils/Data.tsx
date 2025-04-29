@@ -9,8 +9,8 @@ export const MENU_LINKS = [
 export const STATS = [
   { id: 1, count: "6", label: "Tahun Pengalaman" },
   { id: 2, count: "10", label: "Certifikat Dimiliki" },
-  { id: 3, count: "50+", label: "Projek Selesai" },
-  { id: 4, count: "10+", label: "Client Puas" },
+  { id: 3, count: "70", label: "Projek Selesai" },
+  { id: 4, count: "10", label: "Client Puas" },
 ];
 
 export const SKILL_TABS = [

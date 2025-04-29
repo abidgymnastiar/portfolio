@@ -2,6 +2,7 @@ import { Link } from "react-scroll";
 import StatInCard from "../components/StatInCard";
 import { ABOUT_ME, STATS } from "../utils/Data";
 import { hero } from "../utils/ImageImports";
+import { motion } from "framer-motion";
 
 function Hero() {
   return (
@@ -10,7 +11,12 @@ function Hero() {
       className="mx-auto px-5 py-10 md:py-20 lg:mt-10 max-w-[1440px]"
     >
       <div className="flex flex-col lg:flex-row gap-2 lg:gap-14 items-center justify-between">
-        <div className="order-2 lg:order-1 text-center lg:text-left mt-16 lg:mt-0">
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="order-2 lg:order-1 text-center lg:text-left mt-16 lg:mt-0"
+        >
           <h3 className="text-xl lg:text-2xl font-medium text-secondaryy-100 ">
             👋🏻 Halo, Saya Abid
           </h3>
@@ -56,14 +62,19 @@ function Hero() {
               </button>
             </a>
           </div>
-        </div>
-        <div className="lg:order-2 order-1">
+        </motion.div>
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="lg:order-2 order-1"
+        >
           <img
             src={hero}
             alt="hero"
             className="w-full h-[350px] md:h-[500px] object-cover"
           />
-        </div>
+        </motion.div>
       </div>
       <div className="flex gap-[12px] mt-16 md:mt-24 flex-wrap justify-center">
         {STATS.map((item) => (
