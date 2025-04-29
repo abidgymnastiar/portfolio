@@ -4,24 +4,17 @@ import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import { useCallback, useEffect, useState } from "react";
 import ProjectCard from "../components/ProjectCard";
-import { PROJECTS } from "../utils/Data";
+// import { PROJECTS } from "../utils/Data";
+import useProject, { Project } from "../hooks/useProject";
 import DetailProject from "../components/Modal/DetailProject";
 
-interface ProjectType {
-  id: string;
-  title: string;
-  image: string[];
-  tags: string[];
-  description?: string;
-  link?: string;
-}
-
 function MyProjects() {
+  const { project } = useProject();
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "start" });
-  const [canScrollPrev, setCanScrollPrev] = useState(false);
+  const [canScrollPrev, setCanScrollPrev] = useState(true);
   const [canScrollNext, setCanScrollNext] = useState(true);
   const [open, setOpen] = useState<boolean>(false);
-  const [selectedProject, setSelectedProject] = useState<ProjectType | null>(null);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   const updateScrollButton = useCallback(() => {
     if (!emblaApi) return;
@@ -32,7 +25,6 @@ function MyProjects() {
   useEffect(() => {
     if (!emblaApi) return;
     emblaApi.on("select", updateScrollButton);
-    // updateScrollButtons();
   }, [emblaApi, updateScrollButton]);
 
   return (
@@ -56,21 +48,22 @@ function MyProjects() {
         <div className="relative">
           <div className="overflow-hidden" ref={emblaRef}>
             <div className="flex pt-14 pb-8">
-              {PROJECTS.map((project) => (
+              {project.map((pjc) => (
                 <button
-                  key={project.id}
+                  key={pjc.id}
                   className="min-w-[100%] sm:min-w-[50%] lg:min-w-[33%]"
                   onClick={() => {
-                    setSelectedProject(project);
+                    setSelectedProject(pjc);
                     setOpen(true);
                   }}
                 >
                   {/* <motion.button className="min-w-full sm:min-w-1/2 lg:min-w-1/3"> */}
                   <ProjectCard
-                    key={project.id}
-                    imgUrl={project.image[0]}
-                    title={project.title}
-                    tags={project.tags.map((tag) => ({ tags: tag }))}
+                    key={pjc.id}
+                    url={pjc.mainImage[0].asset.url}
+                    alt={pjc.mainImage[0].alt ?? "No Alt"}
+                    title={pjc.title}
+                    programLanguage={pjc.programLanguage}
                   />
                   {/* </motion.button> */}
                 </button>
@@ -79,7 +72,20 @@ function MyProjects() {
             <DetailProject
               open={open}
               onClose={() => setOpen(false)}
-              data={selectedProject || undefined}
+              data={
+                selectedProject
+                  ? {
+                      ...selectedProject,
+                      programLanguage: selectedProject.programLanguage?.map(
+                        (pl) => ({
+                          id: pl.id,
+                          title: pl.name, // <-- ubah name ke title
+                        })
+                      ),
+                      description: JSON.stringify(selectedProject.description), // Convert description to string
+                    }
+                  : undefined
+              }
             />
           </div>
           <button

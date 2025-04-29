@@ -5,14 +5,14 @@ import TechnicalProficiency from "./section/TechnicalProficiency";
 import MyProjects from "./section/MyProjects";
 import ContactMe from "./section/ContactMe";
 import Footer from "./section/Footer";
-import Blog from "./section/Blogg";
+// import Blog from "./section/Blogg";
 
 function App() {
   return (
     <div className="bg-gradient-secondary">
       <Navbar />
       <Hero />
-      <Blog />
+      {/* <Blog /> */}
       <TechnicalProficiency />
       {/* <AboutMe /> */}
       <MyProjects />

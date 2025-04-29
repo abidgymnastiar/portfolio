@@ -1,46 +1,24 @@
-import { useEffect, useState } from "react";
-import client from "../../client";
-import { PortableText, PortableTextBlock } from "@portabletext/react";
+import { PortableText } from "@portabletext/react";
+import useProject from "../hooks/useProject";
 
 function Blog() {
-  interface Post {
-    title: string;
-    slug: { current: string };
-    body: PortableTextBlock[];
-    mainImage: { asset: { url: string }; alt: string };
-  }
-
-  const [posts, setPost] = useState<Post[]>([]);
-
-  useEffect(() => {
-    client
-      .fetch(
-        `*[_type == "post"]{
-          title,
-          slug,
-          body,
-          mainImage {
-            asset -> {
-              _id,
-              url
-            },
-            alt
-          }
-        }`
-      )
-      .then((data) => setPost(data))
-      .catch(console.error);
-  }, []);
+  const { project } = useProject();
 
   return (
-    <div>
+    <div className="text-white">
       <h1>Blog News</h1>
       <div>
-        {posts.map((post) => (
-          <div key={post.slug.current}>
+        {project.map((post) => (
+          <div key={post.id}>
             <h2>{post.title}</h2>
-            <img src={post.mainImage.asset.url} alt={post.mainImage.alt} />
-            <PortableText value={post.body} />
+            <img src={post.mainImage[0].asset.url} alt={post.mainImage[0].alt} />
+            <PortableText value={post.description} />
+            <p>
+              {post.programLanguage.map((lang, index) => (
+                <span key={`${post.id}-${index}`}>{lang.name}</span>
+              ))}
+            </p>
+            <p>{post.link}</p>
           </div>
         ))}
       </div>

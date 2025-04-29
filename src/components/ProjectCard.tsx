@@ -1,15 +1,19 @@
 interface ProjectCardProps {
-  imgUrl: string;
+  url: string;
+  alt: string;
   title: string;
-  tags: { tags: string }[];
+  programLanguage: {
+    id: string;
+    name: string;
+  }[];
 }
 
-function ProjectCard({ imgUrl, title, tags }: ProjectCardProps) {
+function ProjectCard({ url, alt, title, programLanguage }: ProjectCardProps) {
   return (
     <div className="h-full bg-tertiary-200 rounded-xl overflow-hidden shadow-md mx-2">
       <img
-        src={imgUrl}
-        alt={title}
+        src={url}
+        alt={alt}
         className="w-full h-72 md:h-80 object-top object-cover"
       />
       <div className="px-4 py-5">
@@ -17,12 +21,12 @@ function ProjectCard({ imgUrl, title, tags }: ProjectCardProps) {
           {title}
         </h3>
         <div className="flex flex-wrap gap-2 mt-2">
-          {tags.map((tag, index) => (
+          {programLanguage.map((lge) => (
             <span
-              key={index}
+              key={lge.id}
               className="text-xs text-tertiary-600 bg-quaternary-300 px-3 py-1 rounded"
             >
-              {tag.tags}
+              {lge.name}
             </span>
           ))}
         </div>

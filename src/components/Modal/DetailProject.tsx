@@ -1,24 +1,24 @@
 import { useEffect, useState } from "react";
 import { CgClose } from "react-icons/cg";
 
-interface DetailedHTMLProps {
+interface DetailProjectProps {
   open: boolean;
   onClose: () => void;
   data?: {
     title: string;
-    image: string[];
-    tags: string[];
+    mainImage: { asset: { url: string }; alt?: string }[];
+    programLanguage?: { id: string; title: string }[];
     description?: string;
     link?: string;
   };
 }
 
-function DetailProject({ open, onClose, data }: DetailedHTMLProps) {
+function DetailProject({ open, onClose, data }: DetailProjectProps) {
   const [mainImage, setMainImage] = useState<string | null>(null);
 
   useEffect(() => {
-    if (data && data.image && data.image.length > 0) {
-      setMainImage(data.image[0]);
+    if (data && data.mainImage && data.mainImage.length > 0) {
+      setMainImage(data.mainImage[0].asset.url);
     }
   }, [data]);
 
@@ -49,14 +49,14 @@ function DetailProject({ open, onClose, data }: DetailedHTMLProps) {
 
           {/* Thumbnail */}
           <div className="w-[100px] flex flex-col gap-2">
-            {data.image.map((thumbnail, index) => (
+            {data.mainImage.map((thumbnail, index) => (
               <div
                 key={index}
-                onClick={() => setMainImage(thumbnail)}
+                onClick={() => setMainImage(thumbnail.asset.url)}
                 className="cursor-pointer border border-gray-300 hover:border-blue-500 transition duration-200"
               >
                 <img
-                  src={thumbnail}
+                  src={thumbnail.asset.url}
                   alt={`Thumbnail ${index + 1}`}
                   className="w-full h-[70px] object-top object-cover"
                 />
@@ -65,14 +65,14 @@ function DetailProject({ open, onClose, data }: DetailedHTMLProps) {
           </div>
         </div>
 
-        {/* Tags */}
+        {/* programLanguage */}
         <div className="flex flex-wrap gap-2 mt-4">
-          {data.tags.map((tag, index) => (
+          {data.programLanguage?.map((lge) => (
             <span
-              key={index}
+              key={lge.id}
               className="text-xs text-white bg-blue-500 px-3 py-1 rounded-full"
             >
-              {tag}
+              {lge.title}
             </span>
           ))}
         </div>
