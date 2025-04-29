@@ -50,7 +50,7 @@ function MyProjects() {
             <div className="flex pt-14 pb-8">
               {project.map((pjc) => (
                 <button
-                  key={pjc.id}
+                  key={pjc._id}
                   className="min-w-[100%] sm:min-w-[50%] lg:min-w-[33%]"
                   onClick={() => {
                     setSelectedProject(pjc);
@@ -59,7 +59,7 @@ function MyProjects() {
                 >
                   {/* <motion.button className="min-w-full sm:min-w-1/2 lg:min-w-1/3"> */}
                   <ProjectCard
-                    key={pjc.id}
+                    key={pjc._id}
                     url={pjc.mainImage[0].asset.url}
                     alt={pjc.mainImage[0].alt ?? "No Alt"}
                     title={pjc.title}
@@ -79,10 +79,10 @@ function MyProjects() {
                       programLanguage: selectedProject.programLanguage?.map(
                         (pl) => ({
                           id: pl.id,
-                          title: pl.name, // <-- ubah name ke title
+                          title: pl.name, 
                         })
                       ),
-                      description: JSON.stringify(selectedProject.description), // Convert description to string
+                      description: JSON.stringify(selectedProject.description),
                     }
                   : undefined
               }

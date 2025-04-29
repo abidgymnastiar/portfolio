@@ -3,7 +3,7 @@ import client from "../../client";
 import { PortableTextBlock } from "@portabletext/react";
 
 export interface Project {
-  id: string;
+  _id: string;
   title: string;
   mainImage: { asset: { url: string }; alt: string }[];
   description: PortableTextBlock[];
@@ -21,7 +21,7 @@ function useProject() {
     client
       .fetch(
         `*[_type == "project"]{
-            id,
+            _id,
             title,
             mainImage []{
                 asset -> {
