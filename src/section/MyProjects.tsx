@@ -7,6 +7,7 @@ import ProjectCard from "../components/ProjectCard";
 // import { PROJECTS } from "../utils/Data";
 import useProject, { Project } from "../hooks/useProject";
 import DetailProject from "../components/Modal/DetailProject";
+import { motion } from "framer-motion";
 
 function MyProjects() {
   const { project } = useProject();
@@ -30,7 +31,13 @@ function MyProjects() {
   return (
     <div id="projects" className="mt-14">
       <div className="w-full max-w-[1440px] mx-auto px-8 md:px-10 py-10">
-        <div className="w-full lg:w-[60vw] mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="w-full lg:w-[60vw] mx-auto"
+        >
           <h4 className="section-title">Projek Terbaru</h4>
 
           <p className="text-sm text-center mt-4 leading-6 text-primaryy-300">
@@ -44,7 +51,7 @@ function MyProjects() {
             ini, saya terus mengembangkan kemampuan dalam menciptakan solusi
             digital yang relevan dan berdampak nyata.
           </p>
-        </div>
+        </motion.div>
         <div className="relative">
           <div className="overflow-hidden" ref={emblaRef}>
             <div className="flex pt-14 pb-8">
@@ -79,7 +86,7 @@ function MyProjects() {
                       programLanguage: selectedProject.programLanguage?.map(
                         (pl) => ({
                           id: pl.id,
-                          title: pl.name, 
+                          title: pl.name,
                         })
                       ),
                       description: JSON.stringify(selectedProject.description),

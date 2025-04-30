@@ -23,7 +23,13 @@ function TechnicalProficiency() {
   return (
     <section id="skills">
       <div className="max-w-[1440px] rounded-3xl py-10 px-5 mx-auto">
-        <div className="w-full lg:w-[60vw] mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="w-full lg:w-[60vw] mx-auto"
+        >
           <h4 className="section-title">Kemampuan Teknis</h4>
           <p className="text-sm text-center mt-4 leading-6 text-primaryy-300">
             Saya memiliki keahlian kuat dalam pengembangan front-end menggunakan
@@ -38,7 +44,7 @@ function TechnicalProficiency() {
             langsung dalam membangun dan mengelola aplikasi web skala kecil
             hingga menengah.
           </p>
-        </div>
+        </motion.div>
         <Tabs
           tabList={SKILL_TABS}
           activeTab={activeTab}
@@ -60,7 +66,6 @@ function TechnicalProficiency() {
                   description={skill.description}
                   progress={skill.progress}
                   experience={skill.experience}
-
                 />
               </motion.div>
             );
